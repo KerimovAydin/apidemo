@@ -9,7 +9,7 @@ CORS(app, resources = {r"/api/news": {
     "methods":["GET"] 
 }})
 
-@app.route("/api/news", methods=["GET"])
+@app.route("/api/news", methods=["GET"])  
 def get_news():
 
     api_key= request.args.get("api_key")
